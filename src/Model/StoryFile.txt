@@ -1,0 +1,28 @@
+***
+    Irgendeine dumme Einleitung
+    **
+        Eine Auswahlmöglichkeit...
+        *
+            Deine Wahl war...BESCHISSEN!
+            #1
+                -100
+            #2
+                -3
+            #3
+            +14
+            #4
+                +33
+    **
+        Weitere Auswahl...
+        *
+            Die Wahl war super!
+            #1
+                +50
+            #2
+                -3
+            #3
+                +14
+            #4
+                +33
+***
+    Weitere Einleitung für ein neues Event...
