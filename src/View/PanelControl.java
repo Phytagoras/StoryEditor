@@ -3,15 +3,19 @@ package View;
 import javax.swing.*;
 
 public class PanelControl {
-    private JPanel panel;
-    private JButton NEWButton;
-    private JButton EDITButton;
-    private JButton SAVEButton;
-    private JButton editPathButton;
-    private JScrollBar scrollBar1;
-    private JScrollBar scrollBar2;
+    private JPanel mainPanel;
+    private JList list1;
+    private JList list2;
+    private JTextField textField4;
+    private JTextField textField5;
+    private JTextField textField6;
+    private JTextField textField7;
+    private JTextArea outcomeField;
+    private JTextArea choiceField;
+    private JTextArea introductionField;
 
-    public JPanel getPanel(){
-        return panel;
+    public JPanel getMainPanel() {
+        return mainPanel;
     }
 }
+
