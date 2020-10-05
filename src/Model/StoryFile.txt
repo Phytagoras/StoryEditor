@@ -9,7 +9,7 @@
             #2
                 -3
             #3
-            +14
+                +14
             #4
                 +33
     **
@@ -25,4 +25,4 @@
             #4
                 +33
 ***
-    Weitere Einleitung für ein neues Event...
+    Weitere Einleitung für ein neues Event

@@ -1,7 +1,7 @@
 package Model;
 
 public class Choice {
-    private String choiceIntro = "";
+    private String choiceIntro = "sdvfsdgdfg";
     private String choiceOutcome = "";
     private int par1 = 0, par2 = 0, par3 = 0, par4 = 0;
 
