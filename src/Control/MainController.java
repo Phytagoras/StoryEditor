@@ -26,26 +26,8 @@ public class MainController {
     private void writeFile() {
         //@TODO writeTheStoryFile
     }
-    public DefaultListModel<String> getListOfEvents(){
-        DefaultListModel listOfEvents = new DefaultListModel();
-        for (Event event :
-                story.getAllEvents()) {
-            listOfEvents.addElement(event.getIntroduction());
-        }
-
-        return listOfEvents;
-    }
-
-    public DefaultListModel<String> getListOfCoices(int index){
-        DefaultListModel listOfChoices = new DefaultListModel();
-        story.getAllEvents()[index].insertNewChoice();
-        story.getAllEvents()[index].insertNewChoice();
-        for (Choice choice :
-                story.getAllEvents()[index].getAllChoices()) {
-            listOfChoices.addElement(choice.getChoiceIntro());
-        }
-
-        return listOfChoices;
+    public Event[] getEvents(){
+        return story.getAllEvents();
     }
 
 
@@ -55,7 +37,19 @@ public class MainController {
         for (Event event :
                 story.getAllEvents()) {
             event.setIntroduction("Testititest");
+            event.insertNewChoice();
+            event.insertNewChoice();
         }
+        story.getAllEvents()[1].getAllChoices()[1].setChoiceIntro("dfasf");
+        panelControl.init();
         panelControl.update();
+    }
+
+    public void addNewEvent() {
+        story.insertNewEvent();
+    }
+
+    public void deleteEventByIndex(int currentEvent) {
+        story.deleteEventByIndex(currentEvent);
     }
 }

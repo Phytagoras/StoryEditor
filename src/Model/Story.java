@@ -28,4 +28,5 @@ public class Story {
     public Event[] getAllEvents() {
         return allEvents;
     }
+
 }

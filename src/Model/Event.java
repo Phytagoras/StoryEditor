@@ -1,7 +1,7 @@
 package Model;
 
 public class Event {
-    private String introduction = "";
+    private String introduction = "---";
     private Choice[] allChoices = new Choice[0];
 
     public void insertNewChoice() {
