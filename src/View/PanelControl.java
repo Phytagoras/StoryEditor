@@ -84,6 +84,7 @@ public class PanelControl {
                 super.mouseClicked(mouseEvent);
                 int tmp = list1.getSelectedIndex();
                 currentEvent = tmp;
+                currentChoice = 0;
                 updateList2();
             }
         });
@@ -107,6 +108,7 @@ public class PanelControl {
             public void actionPerformed(ActionEvent e) {
                 mainController.addNewEvent();
                 currentEvent = 0;
+                currentChoice = 0;
                 update();
             }
         });
@@ -194,6 +196,17 @@ public class PanelControl {
                 fillModel(defaultListModel2, What.Choices);
                 list2.updateUI();
                 updateAllTextFields();
+            }
+            else{
+                defaultListModel2.removeAllElements();
+                list2.updateUI();
+                introductionField.setText(mainController.getEvents()[currentEvent].getIntroduction());
+                choiceField.setText("");
+                outcomeField.setText("");
+                textFieldFirstPara.setText("");
+                textFieldSecondPara.setText("");
+                textFieldThirdPara.setText("");
+                textFieldFourthPara.setText("");
             }
         }
     }
