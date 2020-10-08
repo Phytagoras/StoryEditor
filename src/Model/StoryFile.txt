@@ -1,28 +1,52 @@
 ***
-    Irgendeine dumme Einleitung
-    **
-        Eine Auswahlmöglichkeit...
-        *
-            Deine Wahl war...BESCHISSEN!
-            #1
-                -100
-            #2
-                -3
-            #3
-                +14
-            #4
-                +33
-    **
-        Weitere Auswahl...
-        *
-            Die Wahl war super!
-            #1
-                +50
-            #2
-                -3
-            #3
-                +14
-            #4
-                +33
+Testititest
+**
+---
+*
+
+#1
+0
+#2
+0
+#3
+0
+#4
+0
+**
+---
+*
+
+#1
+0
+#2
+0
+#3
+0
+#4
+0
 ***
-    Weitere Einleitung für ein neues Event
+Testititest
+**
+---
+*
+
+#1
+0
+#2
+0
+#3
+0
+#4
+0
+**
+dfasf
+*
+
+#1
+0
+#2
+0
+#3
+0
+#4
+0

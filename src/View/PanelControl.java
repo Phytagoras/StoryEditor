@@ -156,6 +156,7 @@ public class PanelControl {
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar2(valueOf(textFieldSecondPara.getText()));
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar3(valueOf(textFieldThirdPara.getText()));
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar4(valueOf(textFieldFourthPara.getText()));
+                mainController.writeFile();
                 update();
             }
         }
