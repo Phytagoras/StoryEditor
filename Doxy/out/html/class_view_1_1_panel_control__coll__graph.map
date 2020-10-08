@@ -1,0 +1,7 @@
+<map id="View.PanelControl" name="View.PanelControl">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,133,211"/>
+<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html" title=" " alt="" coords="55,273,206,300"/>
+<area shape="rect" id="node3" href="$class_model_1_1_story.html" title=" " alt="" coords="203,184,295,211"/>
+<area shape="rect" id="node4" href="$class_model_1_1_event.html" title=" " alt="" coords="203,95,296,121"/>
+<area shape="rect" id="node5" href="$class_model_1_1_choice.html" title=" " alt="" coords="199,5,300,32"/>
+</map>
