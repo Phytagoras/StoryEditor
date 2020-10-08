@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['textfieldfirstpara_149',['textFieldFirstPara',['../class_view_1_1_panel_control.html#a2f4a12016dd03d40f75c1c068b20ca0b',1,'View::PanelControl']]],
-  ['textfieldfourthpara_150',['textFieldFourthPara',['../class_view_1_1_panel_control.html#a9238e7c0df97abc2a02b3ec7be2423b7',1,'View::PanelControl']]],
-  ['textfieldsecondpara_151',['textFieldSecondPara',['../class_view_1_1_panel_control.html#a879abae8f078581577d095755a90e17a',1,'View::PanelControl']]],
-  ['textfieldthirdpara_152',['textFieldThirdPara',['../class_view_1_1_panel_control.html#acf310c578eb23fd97456aaa1abf9db03',1,'View::PanelControl']]]
+  ['savebutton_170',['saveButton',['../class_view_1_1_panel_control.html#a915903f21fdadad24979924666624426',1,'View::PanelControl']]],
+  ['story_171',['story',['../class_control_1_1_main_controller.html#ae9cbefb854e70b4fd1cb4ce221d14cb2',1,'Control::MainController']]],
+  ['storyfile_172',['storyFile',['../class_control_1_1_main_controller.html#a5b61b20039260b82ed5eeb9d8c223167',1,'Control::MainController']]]
 ];

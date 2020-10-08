@@ -1,0 +1,4 @@
+<map id="Control.MainController.deleteEventByIndex" name="Control.MainController.deleteEventByIndex">
+<area shape="rect" id="node1" title="Löscht ein Event an einer bestimmten Stelle im Array mit den Events." alt="" coords="260,5,449,47"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,13,212,39"/>
+</map>

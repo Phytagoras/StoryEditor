@@ -6,25 +6,43 @@ Collaboration diagram for View.\+Panel\+Control\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{class_view_1_1_panel_control__coll__graph}
+\includegraphics[width=338pt]{class_view_1_1_panel_control__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enum_view_1_1_panel_control_1_1_what}{What}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_view_1_1_panel_control_a5a31479c30b0feec5a35f6225dafc487}{Panel\+Control}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Hier werden alle Action Listener erstellt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_1_1_panel_control_ae065afd658af93741afa609eb68ea2f2}{init}} ()
+\begin{DoxyCompactList}\small\item\em Methode wird benötigt, um die Listen zu initialiesieren. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_view_1_1_panel_control_af437d7e07f58372dcc35583d17208e01}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updated alle UI Komponenten. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_view_1_1_panel_control_ab5b3a2661da7ae113c50d5694f004ce1}{set\+Main\+Controller}} (\mbox{\hyperlink{class_control_1_1_main_controller}{Main\+Controller}} \mbox{\hyperlink{class_view_1_1_panel_control_add5094a0e211313ee386b8495062fae0}{main\+Controller}})
 \item 
 J\+Panel \mbox{\hyperlink{class_view_1_1_panel_control_a95166ce71ed0480366bca8de2ecddcc8}{get\+Main\+Panel}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Default\+List\+Model$<$ String $>$ \mbox{\hyperlink{class_view_1_1_panel_control_af84b1544e2e896909965374ee180e280}{default\+List\+Model2}} = new Default\+List\+Model$<$$>$()
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_view_1_1_panel_control_a1cdc8473f523200749647d55c528cb05}{save\+All}} ()
+\begin{DoxyCompactList}\small\item\em Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im \mbox{\hyperlink{namespace_model}{Model}} als auch in der Textdatei gespeichert. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_view_1_1_panel_control_a9d5d896dcc290cf453f1c2f2f87bb8ad}{update\+List2}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_1_1_panel_control_ac85a17693f29746234c918989b8932e2}{update\+All\+Text\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Updated nur die Textfelder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_1_1_panel_control_a4ca6a63f046165ef8fb6e8380f898e6b}{fill\+Model}} (Default\+List\+Model$<$ String $>$ default\+List\+Model, \mbox{\hyperlink{enum_view_1_1_panel_control_1_1_what}{What}} what)
+\begin{DoxyCompactList}\small\item\em Füllt die Listen mit den Daten aus den Models. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -59,7 +77,13 @@ J\+Button \mbox{\hyperlink{class_view_1_1_panel_control_a0eb5f96936befd9455ba866
 J\+Button \mbox{\hyperlink{class_view_1_1_panel_control_aabe953024e8b7dc295a8bece9fa3a849}{delete\+Button\+Choice\+List}}
 \item 
 J\+Button \mbox{\hyperlink{class_view_1_1_panel_control_a915903f21fdadad24979924666624426}{save\+Button}}
-\end{DoxyCompactItemize}
+\item 
+Default\+List\+Model$<$ String $>$ \mbox{\hyperlink{class_view_1_1_panel_control_a2f00e94a0f73e97ccf5f1e6017707519}{default\+List\+Model1}} = new Default\+List\+Model$<$$>$()
+\item 
+int \mbox{\hyperlink{class_view_1_1_panel_control_ae63d07403ad80cfe3345e5dd3e0bda8b}{current\+Event}} = 0
+\begin{DoxyCompactList}\small\item\em Das gerade ausgewählte Event. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_view_1_1_panel_control_a1affadf1dc679ff6b3a198179fb1de44}{current\+Choice}} = 0
+\begin{DoxyCompactList}\small\item\em Die gerade ausgewählte Auswahlmöglichkeit. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -69,7 +93,13 @@ J\+Button \mbox{\hyperlink{class_view_1_1_panel_control_a915903f21fdadad24979924
 \doxysubsubsection{\texorpdfstring{PanelControl()}{PanelControl()}}
 {\footnotesize\ttfamily View.\+Panel\+Control.\+Panel\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Hier werden alle Action Listener erstellt. 
+
+die Event Listener für die Textfelder bewirken, dass nur Zahken eingegeben werden können ~\newline
+ die Event listener für die Listen registrieren, welches Event und welche Auswahl gewählt ist Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -79,6 +109,39 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_1_1_panel_control_a4ca6a63f046165ef8fb6e8380f898e6b}\label{class_view_1_1_panel_control_a4ca6a63f046165ef8fb6e8380f898e6b}} 
+\index{View.PanelControl@{View.PanelControl}!fillModel@{fillModel}}
+\index{fillModel@{fillModel}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{fillModel()}{fillModel()}}
+{\footnotesize\ttfamily void View.\+Panel\+Control.\+fill\+Model (\begin{DoxyParamCaption}\item[{Default\+List\+Model$<$ String $>$}]{default\+List\+Model,  }\item[{\mbox{\hyperlink{enum_view_1_1_panel_control_1_1_what}{What}}}]{what }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Füllt die Listen mit den Daten aus den Models. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+List\+Model} & das \mbox{\hyperlink{namespace_model}{Model}} was befüllt werden soll \\
+\hline
+{\em what} & Ob es mit Events oder choices gefüllt wird \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_a4ca6a63f046165ef8fb6e8380f898e6b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_a4ca6a63f046165ef8fb6e8380f898e6b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_view_1_1_panel_control_a95166ce71ed0480366bca8de2ecddcc8}\label{class_view_1_1_panel_control_a95166ce71ed0480366bca8de2ecddcc8}} 
 \index{View.PanelControl@{View.PanelControl}!getMainPanel@{getMainPanel}}
 \index{getMainPanel@{getMainPanel}!View.PanelControl@{View.PanelControl}}
@@ -90,6 +153,50 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=312pt]{class_view_1_1_panel_control_a95166ce71ed0480366bca8de2ecddcc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_view_1_1_panel_control_ae065afd658af93741afa609eb68ea2f2}\label{class_view_1_1_panel_control_ae065afd658af93741afa609eb68ea2f2}} 
+\index{View.PanelControl@{View.PanelControl}!init@{init}}
+\index{init@{init}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void View.\+Panel\+Control.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode wird benötigt, um die Listen zu initialiesieren. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_ae065afd658af93741afa609eb68ea2f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_view_1_1_panel_control_a1cdc8473f523200749647d55c528cb05}\label{class_view_1_1_panel_control_a1cdc8473f523200749647d55c528cb05}} 
+\index{View.PanelControl@{View.PanelControl}!saveAll@{saveAll}}
+\index{saveAll@{saveAll}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{saveAll()}{saveAll()}}
+{\footnotesize\ttfamily void View.\+Panel\+Control.\+save\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im \mbox{\hyperlink{namespace_model}{Model}} als auch in der Textdatei gespeichert. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_a1cdc8473f523200749647d55c528cb05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_a1cdc8473f523200749647d55c528cb05_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_view_1_1_panel_control_ab5b3a2661da7ae113c50d5694f004ce1}\label{class_view_1_1_panel_control_ab5b3a2661da7ae113c50d5694f004ce1}} 
@@ -111,18 +218,50 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void View.\+Panel\+Control.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Updated alle UI Komponenten. 
+
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_view_1_1_panel_control_af437d7e07f58372dcc35583d17208e01_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_view_1_1_panel_control_af437d7e07f58372dcc35583d17208e01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_view_1_1_panel_control_ac85a17693f29746234c918989b8932e2}\label{class_view_1_1_panel_control_ac85a17693f29746234c918989b8932e2}} 
+\index{View.PanelControl@{View.PanelControl}!updateAllTextFields@{updateAllTextFields}}
+\index{updateAllTextFields@{updateAllTextFields}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{updateAllTextFields()}{updateAllTextFields()}}
+{\footnotesize\ttfamily void View.\+Panel\+Control.\+update\+All\+Text\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updated nur die Textfelder. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_ac85a17693f29746234c918989b8932e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view_1_1_panel_control_ac85a17693f29746234c918989b8932e2_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_view_1_1_panel_control_a9d5d896dcc290cf453f1c2f2f87bb8ad}\label{class_view_1_1_panel_control_a9d5d896dcc290cf453f1c2f2f87bb8ad}} 
@@ -131,14 +270,20 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{updateList2()}{updateList2()}}
 {\footnotesize\ttfamily void View.\+Panel\+Control.\+update\+List2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern. 
+
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_view_1_1_panel_control_a9d5d896dcc290cf453f1c2f2f87bb8ad_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -153,6 +298,38 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{choiceField@{choiceField}!View.PanelControl@{View.PanelControl}}
 \doxysubsubsection{\texorpdfstring{choiceField}{choiceField}}
 {\footnotesize\ttfamily J\+Text\+Area View.\+Panel\+Control.\+choice\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_view_1_1_panel_control_a1affadf1dc679ff6b3a198179fb1de44}\label{class_view_1_1_panel_control_a1affadf1dc679ff6b3a198179fb1de44}} 
+\index{View.PanelControl@{View.PanelControl}!currentChoice@{currentChoice}}
+\index{currentChoice@{currentChoice}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{currentChoice}{currentChoice}}
+{\footnotesize\ttfamily int View.\+Panel\+Control.\+current\+Choice = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Die gerade ausgewählte Auswahlmöglichkeit. 
+
+\mbox{\Hypertarget{class_view_1_1_panel_control_ae63d07403ad80cfe3345e5dd3e0bda8b}\label{class_view_1_1_panel_control_ae63d07403ad80cfe3345e5dd3e0bda8b}} 
+\index{View.PanelControl@{View.PanelControl}!currentEvent@{currentEvent}}
+\index{currentEvent@{currentEvent}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{currentEvent}{currentEvent}}
+{\footnotesize\ttfamily int View.\+Panel\+Control.\+current\+Event = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Das gerade ausgewählte Event. 
+
+\mbox{\Hypertarget{class_view_1_1_panel_control_a2f00e94a0f73e97ccf5f1e6017707519}\label{class_view_1_1_panel_control_a2f00e94a0f73e97ccf5f1e6017707519}} 
+\index{View.PanelControl@{View.PanelControl}!defaultListModel1@{defaultListModel1}}
+\index{defaultListModel1@{defaultListModel1}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{defaultListModel1}{defaultListModel1}}
+{\footnotesize\ttfamily Default\+List\+Model$<$String$>$ View.\+Panel\+Control.\+default\+List\+Model1 = new Default\+List\+Model$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_view_1_1_panel_control_af84b1544e2e896909965374ee180e280}\label{class_view_1_1_panel_control_af84b1544e2e896909965374ee180e280}} 
+\index{View.PanelControl@{View.PanelControl}!defaultListModel2@{defaultListModel2}}
+\index{defaultListModel2@{defaultListModel2}!View.PanelControl@{View.PanelControl}}
+\doxysubsubsection{\texorpdfstring{defaultListModel2}{defaultListModel2}}
+{\footnotesize\ttfamily Default\+List\+Model$<$String$>$ View.\+Panel\+Control.\+default\+List\+Model2 = new Default\+List\+Model$<$$>$()\hspace{0.3cm}{\ttfamily [package]}}
 
 \mbox{\Hypertarget{class_view_1_1_panel_control_aabe953024e8b7dc295a8bece9fa3a849}\label{class_view_1_1_panel_control_aabe953024e8b7dc295a8bece9fa3a849}} 
 \index{View.PanelControl@{View.PanelControl}!deleteButtonChoiceList@{deleteButtonChoiceList}}

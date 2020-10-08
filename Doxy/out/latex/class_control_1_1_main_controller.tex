@@ -6,33 +6,37 @@ Collaboration diagram for Control.\+Main\+Controller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=219pt]{class_control_1_1_main_controller__coll__graph}
+\includegraphics[width=235pt]{class_control_1_1_main_controller__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_control_1_1_main_controller_aa14fbd0092b8f4739b4d02cd238e0716}{Main\+Controller}} (\mbox{\hyperlink{class_view_1_1_panel_control}{Panel\+Control}} \mbox{\hyperlink{class_control_1_1_main_controller_aefe86a12bf91dbe4a45c5cf2dba59e4a}{panel\+Control}})
-\item 
-Default\+List\+Model$<$ String $>$ \mbox{\hyperlink{class_control_1_1_main_controller_ae4263cda33065685d58c7789d1415016}{get\+List\+Of\+Events}} ()
-\item 
-Default\+List\+Model$<$ String $>$ \mbox{\hyperlink{class_control_1_1_main_controller_a60aeba0af67df15bc77f707ec67d7c47}{get\+List\+Of\+Coices}} (int index)
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac}{write\+File}} ()
+\begin{DoxyCompactList}\small\item\em Schreibt, wenn ausgeführt, die Story in einer bestimmten Syntax in eine .txt Datei. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_1_1_event}{Event}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_control_1_1_main_controller_a7ca05740679998b55d59da651efa0bd1}{get\+Events}} ()
 \item 
 void \mbox{\hyperlink{class_control_1_1_main_controller_a5959a18aace5eea401c704e2548606e9}{test}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Nur eine Methode zum Testen der Funktionen, als noch keine Dateien vorhanden waren. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_main_controller_a952f17b80dce93da0640184184027090}{add\+New\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Erstellt ein neues Event in der Story. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_main_controller_a0485f4403a6a2cfe24450e94ee629c42}{delete\+Event\+By\+Index}} (int current\+Event)
+\begin{DoxyCompactList}\small\item\em Löscht ein Event an einer bestimmten Stelle im Array mit den Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_control_1_1_main_controller_a33b7554932a7b9c8a301c84d20038c06}{read\+File}} ()
-\item 
-void \mbox{\hyperlink{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac}{write\+File}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_view_1_1_panel_control}{Panel\+Control}} \mbox{\hyperlink{class_control_1_1_main_controller_aefe86a12bf91dbe4a45c5cf2dba59e4a}{panel\+Control}}
 \item 
 \mbox{\hyperlink{class_model_1_1_story}{Story}} \mbox{\hyperlink{class_control_1_1_main_controller_ae9cbefb854e70b4fd1cb4ce221d14cb2}{story}} = new \mbox{\hyperlink{class_model_1_1_story}{Story}}()
+\item 
+File \mbox{\hyperlink{class_control_1_1_main_controller_a5b61b20039260b82ed5eeb9d8c223167}{story\+File}}
 \end{DoxyCompactItemize}
 
 
@@ -43,7 +47,22 @@ void \mbox{\hyperlink{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c
 \doxysubsubsection{\texorpdfstring{MainController()}{MainController()}}
 {\footnotesize\ttfamily Control.\+Main\+Controller.\+Main\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_view_1_1_panel_control}{Panel\+Control}}}]{panel\+Control }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Der Konstruktor. 
+
+Erstellt\+: ~\newline
+ neue File ~\newline
+ und setzt die\+Main\+Controller\+Referenz im Panel\+Controller ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em panel\+Control} & die Referenz auf den Panel Controller. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -53,44 +72,82 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_control_1_1_main_controller_a60aeba0af67df15bc77f707ec67d7c47}\label{class_control_1_1_main_controller_a60aeba0af67df15bc77f707ec67d7c47}} 
-\index{Control.MainController@{Control.MainController}!getListOfCoices@{getListOfCoices}}
-\index{getListOfCoices@{getListOfCoices}!Control.MainController@{Control.MainController}}
-\doxysubsubsection{\texorpdfstring{getListOfCoices()}{getListOfCoices()}}
-{\footnotesize\ttfamily Default\+List\+Model$<$String$>$ Control.\+Main\+Controller.\+get\+List\+Of\+Coices (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_control_1_1_main_controller_a952f17b80dce93da0640184184027090}\label{class_control_1_1_main_controller_a952f17b80dce93da0640184184027090}} 
+\index{Control.MainController@{Control.MainController}!addNewEvent@{addNewEvent}}
+\index{addNewEvent@{addNewEvent}!Control.MainController@{Control.MainController}}
+\doxysubsubsection{\texorpdfstring{addNewEvent()}{addNewEvent()}}
+{\footnotesize\ttfamily void Control.\+Main\+Controller.\+add\+New\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Erstellt ein neues Event in der Story. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a952f17b80dce93da0640184184027090_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a952f17b80dce93da0640184184027090_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control_1_1_main_controller_a0485f4403a6a2cfe24450e94ee629c42}\label{class_control_1_1_main_controller_a0485f4403a6a2cfe24450e94ee629c42}} 
+\index{Control.MainController@{Control.MainController}!deleteEventByIndex@{deleteEventByIndex}}
+\index{deleteEventByIndex@{deleteEventByIndex}!Control.MainController@{Control.MainController}}
+\doxysubsubsection{\texorpdfstring{deleteEventByIndex()}{deleteEventByIndex()}}
+{\footnotesize\ttfamily void Control.\+Main\+Controller.\+delete\+Event\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{current\+Event }\end{DoxyParamCaption})}
+
+
+
+Löscht ein Event an einer bestimmten Stelle im Array mit den Events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Event} & Die bestimmte Stelle \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a0485f4403a6a2cfe24450e94ee629c42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a0485f4403a6a2cfe24450e94ee629c42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control_1_1_main_controller_a7ca05740679998b55d59da651efa0bd1}\label{class_control_1_1_main_controller_a7ca05740679998b55d59da651efa0bd1}} 
+\index{Control.MainController@{Control.MainController}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!Control.MainController@{Control.MainController}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_1_1_event}{Event}} \mbox{[}$\,$\mbox{]} Control.\+Main\+Controller.\+get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_control_1_1_main_controller_a60aeba0af67df15bc77f707ec67d7c47_cgraph}
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a7ca05740679998b55d59da651efa0bd1_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_control_1_1_main_controller_a60aeba0af67df15bc77f707ec67d7c47_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_control_1_1_main_controller_ae4263cda33065685d58c7789d1415016}\label{class_control_1_1_main_controller_ae4263cda33065685d58c7789d1415016}} 
-\index{Control.MainController@{Control.MainController}!getListOfEvents@{getListOfEvents}}
-\index{getListOfEvents@{getListOfEvents}!Control.MainController@{Control.MainController}}
-\doxysubsubsection{\texorpdfstring{getListOfEvents()}{getListOfEvents()}}
-{\footnotesize\ttfamily Default\+List\+Model$<$String$>$ Control.\+Main\+Controller.\+get\+List\+Of\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_control_1_1_main_controller_ae4263cda33065685d58c7789d1415016_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_control_1_1_main_controller_ae4263cda33065685d58c7789d1415016_icgraph}
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a7ca05740679998b55d59da651efa0bd1_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_control_1_1_main_controller_a33b7554932a7b9c8a301c84d20038c06}\label{class_control_1_1_main_controller_a33b7554932a7b9c8a301c84d20038c06}} 
@@ -99,6 +156,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
 {\footnotesize\ttfamily void Control.\+Main\+Controller.\+read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_a33b7554932a7b9c8a301c84d20038c06_cgraph}
+\end{center}
+\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -112,26 +181,43 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{test()}{test()}}
 {\footnotesize\ttfamily void Control.\+Main\+Controller.\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Nur eine Methode zum Testen der Funktionen, als noch keine Dateien vorhanden waren. 
+
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_control_1_1_main_controller_a5959a18aace5eea401c704e2548606e9_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_control_1_1_main_controller_a5959a18aace5eea401c704e2548606e9_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac}\label{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac}} 
 \index{Control.MainController@{Control.MainController}!writeFile@{writeFile}}
 \index{writeFile@{writeFile}!Control.MainController@{Control.MainController}}
 \doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
-{\footnotesize\ttfamily void Control.\+Main\+Controller.\+write\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Control.\+Main\+Controller.\+write\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Schreibt, wenn ausgeführt, die Story in einer bestimmten Syntax in eine .txt Datei. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control_1_1_main_controller_aaf20e4c360e56cd0625244c2c94f5fac_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
@@ -146,6 +232,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{story@{story}!Control.MainController@{Control.MainController}}
 \doxysubsubsection{\texorpdfstring{story}{story}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_model_1_1_story}{Story}} Control.\+Main\+Controller.\+story = new \mbox{\hyperlink{class_model_1_1_story}{Story}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_control_1_1_main_controller_a5b61b20039260b82ed5eeb9d8c223167}\label{class_control_1_1_main_controller_a5b61b20039260b82ed5eeb9d8c223167}} 
+\index{Control.MainController@{Control.MainController}!storyFile@{storyFile}}
+\index{storyFile@{storyFile}!Control.MainController@{Control.MainController}}
+\doxysubsubsection{\texorpdfstring{storyFile}{storyFile}}
+{\footnotesize\ttfamily File Control.\+Main\+Controller.\+story\+File\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

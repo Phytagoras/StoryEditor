@@ -15,6 +15,15 @@ public class MainController {
     private Story story = new Story();
     private File storyFile;
 
+    /**Der Konstruktor.
+     *
+     * Erstellt: <br>
+     * neue File <br>
+     * und setzt dieMainControllerReferenz im PanelController <br>
+     *
+     * @param panelControl  die Referenz auf den Panel Controller.
+     */
+
     public MainController(PanelControl panelControl) {
         this.panelControl = panelControl;
         storyFile = new File("src/Model/StoryFile.txt");
@@ -33,6 +42,9 @@ public class MainController {
         //writeFile();
     }
 
+    /**
+     * Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein
+     */
     private void readFile() {
         try {
             Scanner in = new Scanner(storyFile);
@@ -64,6 +76,9 @@ public class MainController {
 
     }
 
+    /**
+     * Schreibt, wenn ausgeführt, die Story in einer bestimmten Syntax in eine .txt Datei
+     */
     public void writeFile() {
         try {
             storyFile.delete();
@@ -104,7 +119,9 @@ public class MainController {
         return story.getAllEvents();
     }
 
-
+    /**
+     * Nur eine Methode zum Testen der Funktionen, als noch keine Dateien vorhanden waren
+     */
     public void test() {
         story.insertNewEvent();
         story.insertNewEvent();
@@ -117,10 +134,17 @@ public class MainController {
         story.getAllEvents()[1].getAllChoices()[1].setChoiceIntro("dfasf");
     }
 
+    /**
+     * Erstellt ein neues Event in der Story
+     */
     public void addNewEvent() {
         story.insertNewEvent();
     }
 
+    /**
+     * Löscht ein Event an einer bestimmten Stelle im Array mit den Events
+     * @param currentEvent  Die bestimmte Stelle
+     */
     public void deleteEventByIndex(int currentEvent) {
         story.deleteEventByIndex(currentEvent);
     }

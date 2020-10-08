@@ -1,8 +1,9 @@
 <map id="Main" name="Main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,273,56,300"/>
 <area shape="rect" id="node2" href="$class_view_1_1_panel_control.html" title=" " alt="" coords="75,184,203,211"/>
-<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html" title=" " alt="" coords="171,273,322,300"/>
-<area shape="rect" id="node4" href="$class_model_1_1_story.html" title=" " alt="" coords="319,184,411,211"/>
-<area shape="rect" id="node5" href="$class_model_1_1_event.html" title=" " alt="" coords="319,95,412,121"/>
-<area shape="rect" id="node6" href="$class_model_1_1_choice.html" title=" " alt="" coords="315,5,416,32"/>
+<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html" title=" " alt="" coords="230,273,381,300"/>
+<area shape="rect" id="node4" href="$class_model_1_1_story.html" title=" " alt="" coords="305,184,397,211"/>
+<area shape="rect" id="node5" href="$class_model_1_1_event.html" title=" " alt="" coords="304,95,397,121"/>
+<area shape="rect" id="node6" href="$class_model_1_1_choice.html" title=" " alt="" coords="300,5,401,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="421,184,464,211"/>
 </map>

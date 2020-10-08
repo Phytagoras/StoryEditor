@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['update_123',['update',['../class_view_1_1_panel_control.html#af437d7e07f58372dcc35583d17208e01',1,'View::PanelControl']]],
-  ['updatelist2_124',['updateList2',['../class_view_1_1_panel_control.html#a9d5d896dcc290cf453f1c2f2f87bb8ad',1,'View::PanelControl']]]
+  ['test_138',['test',['../class_control_1_1_main_controller.html#a5959a18aace5eea401c704e2548606e9',1,'Control::MainController']]]
 ];

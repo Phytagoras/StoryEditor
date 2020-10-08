@@ -13,9 +13,9 @@ Collaboration diagram for Model.\+Event\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_model_1_1_event_a374427ff2acd389d92eab6729cc547a8}{insert\+New\+Choice}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Mit dieser Methode wird eine neue Auswahlmöglichkeit erstellt. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_model_1_1_event_a2987e95dc6353fb069b04e5e1bad0a8b}{delete\+Choice\+By\+Index}} (int index)
-\item 
+\begin{DoxyCompactList}\small\item\em Mit der Methode kann eine Auswahlmöglichkeit an einem bestimmten Index gelöscht werden. \end{DoxyCompactList}\item 
 String \mbox{\hyperlink{class_model_1_1_event_a9536befeca064bf804e25f0f7af099c6}{get\+Introduction}} ()
 \item 
 void \mbox{\hyperlink{class_model_1_1_event_a0b1c5bc06918decceac4468ae1c74d06}{set\+Introduction}} (String \mbox{\hyperlink{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}{introduction}})
@@ -25,10 +25,10 @@ void \mbox{\hyperlink{class_model_1_1_event_a0b1c5bc06918decceac4468ae1c74d06}{s
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-String \mbox{\hyperlink{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}{introduction}} = \char`\"{}\char`\"{}
-\item 
+String \mbox{\hyperlink{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}{introduction}} = \char`\"{}-\/-\/-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Die Einführung in das \mbox{\hyperlink{class_model_1_1_event}{Event}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_model_1_1_choice}{Choice}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_model_1_1_event_acd3f7c3607162918d5ecaa984f7fbb83}{all\+Choices}} = new \mbox{\hyperlink{class_model_1_1_choice}{Choice}}\mbox{[}0\mbox{]}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Das Array in dem die Auswahlmöglichkeiten verwaltet werden. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -38,13 +38,31 @@ String \mbox{\hyperlink{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}
 \doxysubsubsection{\texorpdfstring{deleteChoiceByIndex()}{deleteChoiceByIndex()}}
 {\footnotesize\ttfamily void Model.\+Event.\+delete\+Choice\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
+
+
+Mit der Methode kann eine Auswahlmöglichkeit an einem bestimmten Index gelöscht werden. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & der Index \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_event_a2987e95dc6353fb069b04e5e1bad0a8b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_1_1_event_a50d7e3b935b36ee2b34ee27e559f14ce}\label{class_model_1_1_event_a50d7e3b935b36ee2b34ee27e559f14ce}} 
 \index{Model.Event@{Model.Event}!getAllChoices@{getAllChoices}}
 \index{getAllChoices@{getAllChoices}!Model.Event@{Model.Event}}
 \doxysubsubsection{\texorpdfstring{getAllChoices()}{getAllChoices()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_model_1_1_choice}{Choice}} \mbox{[}$\,$\mbox{]} Model.\+Event.\+get\+All\+Choices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -57,13 +75,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{getIntroduction()}{getIntroduction()}}
 {\footnotesize\ttfamily String Model.\+Event.\+get\+Introduction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_event_a9536befeca064bf804e25f0f7af099c6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_1_1_event_a374427ff2acd389d92eab6729cc547a8}\label{class_model_1_1_event_a374427ff2acd389d92eab6729cc547a8}} 
 \index{Model.Event@{Model.Event}!insertNewChoice@{insertNewChoice}}
 \index{insertNewChoice@{insertNewChoice}!Model.Event@{Model.Event}}
 \doxysubsubsection{\texorpdfstring{insertNewChoice()}{insertNewChoice()}}
 {\footnotesize\ttfamily void Model.\+Event.\+insert\+New\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+Mit dieser Methode wird eine neue Auswahlmöglichkeit erstellt. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -76,6 +107,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{setIntroduction()}{setIntroduction()}}
 {\footnotesize\ttfamily void Model.\+Event.\+set\+Introduction (\begin{DoxyParamCaption}\item[{String}]{introduction }\end{DoxyParamCaption})}
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_event_a0b1c5bc06918decceac4468ae1c74d06_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
@@ -85,11 +124,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{allChoices}{allChoices}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_model_1_1_choice}{Choice}} \mbox{[}$\,$\mbox{]} Model.\+Event.\+all\+Choices = new \mbox{\hyperlink{class_model_1_1_choice}{Choice}}\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Das Array in dem die Auswahlmöglichkeiten verwaltet werden. 
+
 \mbox{\Hypertarget{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}\label{class_model_1_1_event_a11fbcac6f5b860b6e6f6289d674188db}} 
 \index{Model.Event@{Model.Event}!introduction@{introduction}}
 \index{introduction@{introduction}!Model.Event@{Model.Event}}
 \doxysubsubsection{\texorpdfstring{introduction}{introduction}}
-{\footnotesize\ttfamily String Model.\+Event.\+introduction = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily String Model.\+Event.\+introduction = \char`\"{}-\/-\/-\/\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Die Einführung in das \mbox{\hyperlink{class_model_1_1_event}{Event}}. 
 
 
 

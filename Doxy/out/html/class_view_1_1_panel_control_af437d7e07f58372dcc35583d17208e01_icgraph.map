@@ -1,5 +1,6 @@
 <map id="View.PanelControl.update" name="View.PanelControl.update">
-<area shape="rect" id="node1" title=" " alt="" coords="460,13,631,39"/>
-<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html#a5959a18aace5eea401c704e2548606e9" title=" " alt="" coords="236,13,412,39"/>
-<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node1" title="Updated alle UI Komponenten." alt="" coords="491,71,661,98"/>
+<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="260,5,443,47"/>
+<area shape="rect" id="node3" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,97,212,123"/>
+<area shape="rect" id="node4" href="$class_view_1_1_panel_control.html#a1cdc8473f523200749647d55c528cb05" title="Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textda..." alt="" coords="265,122,438,149"/>
 </map>

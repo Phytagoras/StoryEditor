@@ -1,9 +1,18 @@
 package Model;
 
 public class Event {
+    /**
+     * Die Einführung in das Event
+     */
     private String introduction = "---";
+    /**
+     * Das Array in dem die Auswahlmöglichkeiten verwaltet werden
+     */
     private Choice[] allChoices = new Choice[0];
 
+    /**
+     * Mit dieser Methode wird eine neue Auswahlmöglichkeit erstellt
+     */
     public void insertNewChoice() {
         Choice[] tmpChoiceArr = new Choice[allChoices.length + 1];
         for (int i = 0; i < allChoices.length; i++) {
@@ -13,6 +22,10 @@ public class Event {
         allChoices = tmpChoiceArr;
     }
 
+    /**
+     * Mit der Methode kann eine Auswahlmöglichkeit an einem bestimmten Index gelöscht werden
+     * @param index der Index
+     */
     public void deleteChoiceByIndex(int index) {
         if (index < allChoices.length && index >= 0) {
             Choice[] tmpChoiceArr = new Choice[allChoices.length - 1];

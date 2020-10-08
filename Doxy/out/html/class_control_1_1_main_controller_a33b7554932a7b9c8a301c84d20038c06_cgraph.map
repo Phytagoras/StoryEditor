@@ -1,0 +1,14 @@
+<map id="Control.MainController.readFile" name="Control.MainController.readFile">
+<area shape="rect" id="node1" title="Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein." alt="" coords="5,259,205,285"/>
+<area shape="rect" id="node2" href="$class_model_1_1_event.html#a50d7e3b935b36ee2b34ee27e559f14ce" title=" " alt="" coords="273,5,450,32"/>
+<area shape="rect" id="node3" href="$class_model_1_1_story.html#a8c754d4c698b05d65cce881f51322414" title=" " alt="" coords="277,56,445,83"/>
+<area shape="rect" id="node4" href="$class_model_1_1_event.html#a374427ff2acd389d92eab6729cc547a8" title="Mit dieser Methode wird eine neue Auswahlmöglichkeit erstellt." alt="" coords="264,107,459,133"/>
+<area shape="rect" id="node5" href="$class_model_1_1_story.html#ad92ce1beb8d77894e05b628c5b191250" title="Erstellen eines neuen Events." alt="" coords="269,157,454,184"/>
+<area shape="rect" id="node6" href="$class_model_1_1_choice.html#ad9c716b4d80c4e2abff1e5c12c7ef96e" title=" " alt="" coords="267,208,455,235"/>
+<area shape="rect" id="node7" href="$class_model_1_1_choice.html#a3ba50d6e99bedaf3872b52320f1e5225" title=" " alt="" coords="253,259,469,285"/>
+<area shape="rect" id="node8" href="$class_model_1_1_event.html#a0b1c5bc06918decceac4468ae1c74d06" title=" " alt="" coords="270,309,453,336"/>
+<area shape="rect" id="node9" href="$class_model_1_1_choice.html#af77b6a4ecce3afe1ed05e25d4d838c10" title=" " alt="" coords="286,360,437,387"/>
+<area shape="rect" id="node10" href="$class_model_1_1_choice.html#a0e02eefef705ae7ad75a62f1c2d97881" title=" " alt="" coords="286,411,437,437"/>
+<area shape="rect" id="node11" href="$class_model_1_1_choice.html#a27c34db34fbf2f1669d63641a7856628" title=" " alt="" coords="286,461,437,488"/>
+<area shape="rect" id="node12" href="$class_model_1_1_choice.html#a685a53218594b5f92785ffe4b5cdf27c" title=" " alt="" coords="286,512,437,539"/>
+</map>

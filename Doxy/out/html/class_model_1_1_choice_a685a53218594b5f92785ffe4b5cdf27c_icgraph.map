@@ -1,0 +1,7 @@
+<map id="Model.Choice.setPar4" name="Model.Choice.setPar4">
+<area shape="rect" id="node1" title=" " alt="" coords="508,42,659,69"/>
+<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html#a33b7554932a7b9c8a301c84d20038c06" title="Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein." alt="" coords="260,15,460,42"/>
+<area shape="rect" id="node4" href="$class_view_1_1_panel_control.html#a1cdc8473f523200749647d55c528cb05" title="Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textda..." alt="" coords="273,67,447,94"/>
+<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="17,5,200,47"/>
+<area shape="rect" id="node5" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,71,212,98"/>
+</map>

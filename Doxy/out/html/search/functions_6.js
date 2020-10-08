@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readfile_112',['readFile',['../class_control_1_1_main_controller.html#a33b7554932a7b9c8a301c84d20038c06',1,'Control::MainController']]]
+  ['panelcontrol_126',['PanelControl',['../class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487',1,'View::PanelControl']]]
 ];

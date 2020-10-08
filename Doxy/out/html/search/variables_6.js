@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['newbuttonchoicelist_139',['newButtonChoiceList',['../class_view_1_1_panel_control.html#a0eb5f96936befd9455ba86685eb744a5',1,'View::PanelControl']]],
-  ['newbuttonmainlist_140',['newButtonMainList',['../class_view_1_1_panel_control.html#a35de9282ad5568096f4f2a42018836bd',1,'View::PanelControl']]]
+  ['maincontroller_160',['mainController',['../class_view_1_1_panel_control.html#add5094a0e211313ee386b8495062fae0',1,'View::PanelControl']]],
+  ['mainpanel_161',['mainPanel',['../class_view_1_1_panel_control.html#a3ececc444fa5fa6e25c216125f8a12f5',1,'View::PanelControl']]]
 ];
