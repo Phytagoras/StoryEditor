@@ -8,6 +8,7 @@ import View.PanelControl;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class MainController {
     private PanelControl panelControl;
@@ -26,14 +27,40 @@ public class MainController {
         }
         panelControl.setMainController(this);
         readFile();
-        test();
+        //test();
         panelControl.init();
         panelControl.update();
-        writeFile();
+        //writeFile();
     }
 
     private void readFile() {
-        //@TODO readAnExistingFile
+        try {
+            Scanner in = new Scanner(storyFile);
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                if (line.equals("***")) {
+                    story.insertNewEvent();
+                    story.getAllEvents()[story.getAllEvents().length - 1].setIntroduction(in.nextLine());
+                } else if (line.equals("**")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].insertNewChoice();
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setChoiceIntro(in.nextLine());
+                } else if (line.equals("*")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setChoiceOutcome(in.nextLine());
+                } else if (line.equals("#1")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setPar1(in.nextInt());
+                } else if (line.equals("#2")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setPar2(in.nextInt());
+                } else if (line.equals("#3")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setPar3(in.nextInt());
+                } else if (line.equals("#4")) {
+                    story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices()[story.getAllEvents()[story.getAllEvents().length - 1].getAllChoices().length - 1].setPar4(in.nextInt());
+                }
+            }
+            in.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
@@ -50,17 +77,17 @@ public class MainController {
                 for (Choice choice :
                         event.getAllChoices()) {
                     fileWriter.write("**\n");
-                    fileWriter.write(choice.getChoiceIntro()+"\n");
+                    fileWriter.write(choice.getChoiceIntro() + "\n");
                     fileWriter.write("*\n");
-                    fileWriter.write(choice.getChoiceOutcome()+"\n");
+                    fileWriter.write(choice.getChoiceOutcome() + "\n");
                     fileWriter.write("#1\n");
-                    fileWriter.write(choice.getPar1()+"\n");
+                    fileWriter.write(choice.getPar1() + "\n");
                     fileWriter.write("#2\n");
-                    fileWriter.write(choice.getPar2()+"\n");
+                    fileWriter.write(choice.getPar2() + "\n");
                     fileWriter.write("#3\n");
-                    fileWriter.write(choice.getPar3()+"\n");
+                    fileWriter.write(choice.getPar3() + "\n");
                     fileWriter.write("#4\n");
-                    fileWriter.write(choice.getPar4()+"\n");
+                    fileWriter.write(choice.getPar4() + "\n");
 
                 }
 
