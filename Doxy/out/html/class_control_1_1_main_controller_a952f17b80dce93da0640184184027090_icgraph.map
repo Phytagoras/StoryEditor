@@ -1,0 +1,4 @@
+<map id="Control.MainController.addNewEvent" name="Control.MainController.addNewEvent">
+<area shape="rect" id="node1" title="Erstellt ein neues Event in der Story." alt="" coords="260,5,435,47"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,13,212,39"/>
+</map>

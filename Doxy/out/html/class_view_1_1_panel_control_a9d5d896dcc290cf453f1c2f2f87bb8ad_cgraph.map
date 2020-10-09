@@ -1,0 +1,15 @@
+<map id="View.PanelControl.updateList2" name="View.PanelControl.updateList2">
+<area shape="rect" id="node1" title="Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern." alt="" coords="5,107,176,148"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a4ca6a63f046165ef8fb6e8380f898e6b" title="Füllt die Listen mit den Daten aus den Models." alt="" coords="226,13,405,39"/>
+<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html#a7ca05740679998b55d59da651efa0bd1" title=" " alt="" coords="477,5,649,47"/>
+<area shape="rect" id="node5" href="$class_model_1_1_event.html#a50d7e3b935b36ee2b34ee27e559f14ce" title=" " alt="" coords="474,71,651,98"/>
+<area shape="rect" id="node6" href="$class_model_1_1_event.html#a9536befeca064bf804e25f0f7af099c6" title=" " alt="" coords="224,231,407,258"/>
+<area shape="rect" id="node7" href="$class_view_1_1_panel_control.html#ac85a17693f29746234c918989b8932e2" title="Updated nur die Textfelder." alt="" coords="230,165,401,207"/>
+<area shape="rect" id="node4" href="$class_model_1_1_story.html#a8c754d4c698b05d65cce881f51322414" title=" " alt="" coords="719,13,887,39"/>
+<area shape="rect" id="node8" href="$class_model_1_1_choice.html#a69254e27a7e9a7bc61ce808e3a1f9e5d" title=" " alt="" coords="469,122,657,149"/>
+<area shape="rect" id="node9" href="$class_model_1_1_choice.html#afeb0511d2d4412ac01d2fc8044271ab6" title=" " alt="" coords="455,173,671,199"/>
+<area shape="rect" id="node10" href="$class_model_1_1_choice.html#a458cff4e6ac2251f97cf4744a0184d5e" title=" " alt="" coords="487,223,638,250"/>
+<area shape="rect" id="node11" href="$class_model_1_1_choice.html#ae6ef90951412f1faf0ea8f76a2cf5344" title=" " alt="" coords="487,274,638,301"/>
+<area shape="rect" id="node12" href="$class_model_1_1_choice.html#ac78da193008d42e213e6ec51d386792b" title=" " alt="" coords="487,325,638,351"/>
+<area shape="rect" id="node13" href="$class_model_1_1_choice.html#ace9cc63f77992971a93c54aaff101ed1" title=" " alt="" coords="487,375,638,402"/>
+</map>

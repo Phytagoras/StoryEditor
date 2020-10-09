@@ -1,0 +1,4 @@
+<map id="Control.MainController.addNewEvent" name="Control.MainController.addNewEvent">
+<area shape="rect" id="node1" title="Erstellt ein neues Event in der Story." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="$class_model_1_1_story.html#ad92ce1beb8d77894e05b628c5b191250" title="Erstellen eines neuen Events." alt="" coords="228,13,413,39"/>
+</map>

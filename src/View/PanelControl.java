@@ -27,9 +27,21 @@ public class PanelControl {
     private JButton deleteButtonChoiceList;
     private JButton saveButton;
     private DefaultListModel<String> defaultListModel1 = new DefaultListModel<>(), defaultListModel2 = new DefaultListModel<>();
+    /**
+     * Das gerade ausgewählte Event
+     */
     private int currentEvent = 0;
+    /**
+     * Die gerade ausgewählte Auswahlmöglichkeit
+     */
     private int currentChoice = 0;
 
+    /**
+     * Hier werden alle Action Listener erstellt.
+     *
+     * die Event Listener für die Textfelder bewirken, dass nur Zahken eingegeben werden können <br>
+     *     die Event listener für die Listen registrieren, welches Event und welche Auswahl gewählt ist
+     */
     public PanelControl() {
         textFieldFirstPara.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent e) {
@@ -146,6 +158,9 @@ public class PanelControl {
         });
     }
 
+    /**
+     * Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textdatei gespeichert
+     */
     private void saveAll() {
         if (currentEvent < mainController.getEvents().length) {
             if (currentChoice < mainController.getEvents()[currentEvent].getAllChoices().length) {
@@ -156,17 +171,24 @@ public class PanelControl {
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar2(valueOf(textFieldSecondPara.getText()));
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar3(valueOf(textFieldThirdPara.getText()));
                 mainController.getEvents()[currentEvent].getAllChoices()[currentChoice].setPar4(valueOf(textFieldFourthPara.getText()));
+                mainController.writeFile();
                 update();
             }
         }
     }
 
+    /**
+     * Methode wird benötigt, um die Listen zu initialiesieren
+     */
     public void init() {
         list1.setModel(defaultListModel1);
         list2.setModel(defaultListModel2);
 
     }
 
+    /**
+     * Updated alle UI Komponenten
+     */
     public void update() {
         if (currentEvent < mainController.getEvents().length && currentEvent>-1) {
             defaultListModel1.removeAllElements();
@@ -189,6 +211,9 @@ public class PanelControl {
         }
     }
 
+    /**
+     * Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern
+     */
     private void updateList2() {
         if (currentEvent < mainController.getEvents().length && currentEvent>-1) {
             if (currentChoice < mainController.getEvents()[currentEvent].getAllChoices().length && currentChoice>-1) {
@@ -211,6 +236,9 @@ public class PanelControl {
         }
     }
 
+    /**
+     * Updated nur die Textfelder
+     */
     private void updateAllTextFields() {
         if (currentEvent < mainController.getEvents().length && currentEvent>-1) {
             if (currentChoice < mainController.getEvents()[currentEvent].getAllChoices().length && currentChoice>-1) {
@@ -232,6 +260,11 @@ public class PanelControl {
         return mainPanel;
     }
 
+    /**
+     * Füllt die Listen mit den Daten aus den Models
+     * @param defaultListModel das Model was befüllt werden soll
+     * @param what Ob es mit Events oder choices gefüllt wird
+     */
     private void fillModel(DefaultListModel<String> defaultListModel, What what) {
         Event[] events = mainController.getEvents();
         switch (what) {

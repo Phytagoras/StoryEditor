@@ -1,0 +1,8 @@
+<map id="Model.Story.insertNewEvent" name="Model.Story.insertNewEvent">
+<area shape="rect" id="node1" title="Erstellen eines neuen Events." alt="" coords="508,71,693,98"/>
+<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html#a952f17b80dce93da0640184184027090" title="Erstellt ein neues Event in der Story." alt="" coords="273,5,447,47"/>
+<area shape="rect" id="node4" href="$class_control_1_1_main_controller.html#a33b7554932a7b9c8a301c84d20038c06" title="Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein." alt="" coords="260,71,460,98"/>
+<area shape="rect" id="node6" href="$class_control_1_1_main_controller.html#a5959a18aace5eea401c704e2548606e9" title="Nur eine Methode zum Testen der Funktionen, als noch keine Dateien vorhanden waren." alt="" coords="272,122,448,149"/>
+<area shape="rect" id="node3" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,13,212,39"/>
+<area shape="rect" id="node5" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="17,64,200,105"/>
+</map>

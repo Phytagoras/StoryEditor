@@ -1,0 +1,4 @@
+<map id="Control.MainController.deleteEventByIndex" name="Control.MainController.deleteEventByIndex">
+<area shape="rect" id="node1" title="Löscht ein Event an einer bestimmten Stelle im Array mit den Events." alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node2" href="$class_model_1_1_story.html#a88eec011c9b0bc9db852a4ffc4ab89eb" title="Löschen eines Events an einer bestimmten Stelle im Array." alt="" coords="243,5,421,47"/>
+</map>

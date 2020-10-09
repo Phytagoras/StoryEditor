@@ -1,0 +1,8 @@
+<map id="Model.Event.getIntroduction" name="Model.Event.getIntroduction">
+<area shape="rect" id="node1" title=" " alt="" coords="928,122,1111,149"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#af437d7e07f58372dcc35583d17208e01" title="Updated alle UI Komponenten." alt="" coords="491,93,661,119"/>
+<area shape="rect" id="node6" href="$class_view_1_1_panel_control.html#a9d5d896dcc290cf453f1c2f2f87bb8ad" title="Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern." alt="" coords="709,144,880,185"/>
+<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="260,5,443,47"/>
+<area shape="rect" id="node4" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,122,212,149"/>
+<area shape="rect" id="node5" href="$class_view_1_1_panel_control.html#a1cdc8473f523200749647d55c528cb05" title="Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textda..." alt="" coords="265,122,438,149"/>
+</map>

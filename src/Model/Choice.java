@@ -1,8 +1,17 @@
 package Model;
 
 public class Choice {
+    /**
+     * Die Auswahlmöglichkeit
+     */
     private String choiceIntro = "---";
+    /**
+     * Das was erscheint, wenn die Auswahl getroffen worden ist
+     */
     private String choiceOutcome = "";
+    /**
+     * Die Parameter, die verändert werden
+     */
     private int par1 = 0, par2 = 0, par3 = 0, par4 = 0;
 
     public String getChoiceIntro() {

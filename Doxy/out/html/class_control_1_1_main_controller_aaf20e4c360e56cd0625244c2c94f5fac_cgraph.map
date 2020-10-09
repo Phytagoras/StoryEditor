@@ -1,0 +1,5 @@
+<map id="Control.MainController.writeFile" name="Control.MainController.writeFile">
+<area shape="rect" id="node1" title="Schreibt, wenn ausgeführt, die Story in einer bestimmten Syntax in eine .txt Datei." alt="" coords="5,13,208,39"/>
+<area shape="rect" id="node2" href="$class_control_1_1_main_controller.html#a7ca05740679998b55d59da651efa0bd1" title=" " alt="" coords="256,5,428,47"/>
+<area shape="rect" id="node3" href="$class_model_1_1_story.html#a8c754d4c698b05d65cce881f51322414" title=" " alt="" coords="476,13,644,39"/>
+</map>

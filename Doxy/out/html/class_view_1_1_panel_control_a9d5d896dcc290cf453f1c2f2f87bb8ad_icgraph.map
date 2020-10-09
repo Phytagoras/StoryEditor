@@ -1,0 +1,7 @@
+<map id="View.PanelControl.updateList2" name="View.PanelControl.updateList2">
+<area shape="rect" id="node1" title="Updated alle UI Komponenten von der Liste der Auswahlmöglichkeiten und Den Textfeldern." alt="" coords="709,5,880,47"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,9,212,35"/>
+<area shape="rect" id="node3" href="$class_view_1_1_panel_control.html#af437d7e07f58372dcc35583d17208e01" title="Updated alle UI Komponenten." alt="" coords="491,38,661,65"/>
+<area shape="rect" id="node4" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="260,60,443,101"/>
+<area shape="rect" id="node5" href="$class_view_1_1_panel_control.html#a1cdc8473f523200749647d55c528cb05" title="Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textda..." alt="" coords="265,126,438,153"/>
+</map>

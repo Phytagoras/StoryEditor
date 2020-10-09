@@ -1,0 +1,5 @@
+<map id="Control.MainController.writeFile" name="Control.MainController.writeFile">
+<area shape="rect" id="node1" title="Schreibt, wenn ausgeführt, die Story in einer bestimmten Syntax in eine .txt Datei." alt="" coords="481,5,684,32"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a1cdc8473f523200749647d55c528cb05" title="Wird die Methode aufgerufen, so werden alle eingegebenen Daten sowohl im Model als auch in der Textda..." alt="" coords="260,5,433,32"/>
+<area shape="rect" id="node3" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="5,5,212,32"/>
+</map>

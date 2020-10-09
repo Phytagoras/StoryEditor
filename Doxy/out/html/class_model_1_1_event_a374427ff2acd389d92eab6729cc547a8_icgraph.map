@@ -1,0 +1,6 @@
+<map id="Model.Event.insertNewChoice" name="Model.Event.insertNewChoice">
+<area shape="rect" id="node1" title="Mit dieser Methode wird eine neue Auswahlmöglichkeit erstellt." alt="" coords="491,31,685,57"/>
+<area shape="rect" id="node2" href="$class_view_1_1_panel_control.html#a5a31479c30b0feec5a35f6225dafc487" title="Hier werden alle Action Listener erstellt." alt="" coords="236,5,443,32"/>
+<area shape="rect" id="node3" href="$class_control_1_1_main_controller.html#a33b7554932a7b9c8a301c84d20038c06" title="Liest mit Hilfe der Scanner Klasse eine bestehende Storyfile ein." alt="" coords="239,56,439,83"/>
+<area shape="rect" id="node4" href="$class_control_1_1_main_controller.html#aa14fbd0092b8f4739b4d02cd238e0716" title="Der Konstruktor." alt="" coords="5,49,188,90"/>
+</map>
