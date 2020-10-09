@@ -36,6 +36,18 @@ Der Oger fängt an zu tanzen! Das hast du toll gemacht!
 0
 #4
 0
+**
+Versuche an ihm vorbei zu schleichen
+*
+Der Oger ist zu fett!
+#1
+-39
+#2
+0
+#3
+0
+#4
+0
 ***
 Ein Fluss quert den Weg
 **
