@@ -1,9 +1,9 @@
 ***
-firstEv
+Ein Oger erscheint
 **
-firstChoice
+Ich haue ab!
 *
-FirstOut
+Du schaffst es gerade so zu fliehen
 #1
 0
 #2
@@ -11,11 +11,23 @@ FirstOut
 #3
 0
 #4
+-1
+**
+Ich schlage mit meinem Breitschwert
+*
+Du besiegst den Oger heldenhaft
+#1
+0
+#2
+50
+#3
+0
+#4
 0
 **
-secChoi
+Ich singe:)
 *
-secChoiOut
+Der Oger fängt an zu tanzen! Das hast du toll gemacht!
 #1
 0
 #2
@@ -25,11 +37,37 @@ secChoiOut
 #4
 0
 ***
-secEvent
+Ein Fluss quert den Weg
 **
-FisrtCHoi
+Ich schwimme durch
 *
-Chioout
+Der Fluss reißt dich mit und du verletzt dich ein wenig...
+#1
+-15
+#2
+0
+#3
+0
+#4
+0
+**
+Du siehst dich nach einer anderen Möglichkeit der Überquerung um
+*
+Du findest eine Brücke
+#1
+0
+#2
+0
+#3
+0
+#4
+0
+***
+Plötzlich tut sich ein schwarzes Loch auf
+**
+Du fragst den Oger um Hilfe
+*
+Er beschreibt dir mithilfe der Relativitätstheorie wie du es schaffst zu überleben
 #1
 0
 #2
@@ -39,11 +77,23 @@ Chioout
 #4
 0
 **
-srefcChoice
+Du gehst rein
 *
-CefhshrfOut
+Du wirst vom Spaghettieffekt spaghettiert
 #1
+-50
+#2
 0
+#3
+0
+#4
+0
+**
+Du fragst den deutschen Nobelpreisträger um Hilfe
+*
+Er hat leider keine Ahnung. Du stirbst sofort!
+#1
+-1000
 #2
 0
 #3
